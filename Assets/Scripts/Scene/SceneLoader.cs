@@ -10,7 +10,8 @@ public class SceneLoader : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        // Set the current scene index to active scene index
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         // Wait till the background sound is finished(5 seconds)
         if (currentSceneIndex == 0)
@@ -19,21 +20,22 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // Delay
+    // Delay Scene loading
     IEnumerator DelayLoadScene()
     {
         yield return new WaitForSeconds(loadSceneDelayTime);
         LoadNextScene();
     }
 
+    // Load next coming scene in the order 
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    // Quit the application
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }

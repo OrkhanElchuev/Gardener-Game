@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088909917}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -959.2405, y: -526.1924, z: 27.341772}
+  m_LocalPosition: {x: -860, y: -510, z: 5}
   m_LocalScale: {x: 2.278481, y: 2.278482, z: 2.278482}
   m_Children: []
   m_Father: {fileID: 6359536209625635001}
@@ -169,7 +169,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.6
-      minScalar: 0.2
+      minScalar: 0.3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -667,7 +667,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 20, y: 1, z: 1}
+    m_Scale: {x: 10, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -4889,8 +4889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.6500244, y: -211.1}
-  m_SizeDelta: {x: 1919.3, y: 422}
+  m_AnchoredPosition: {x: -0.0010071, y: -167.5}
+  m_SizeDelta: {x: 1729.8, y: 334.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6359536210593437361
 CanvasRenderer:
@@ -4930,8 +4930,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2528311985
-  m_fontColor: {r: 0.69419724, g: 0.9811321, b: 0.7007633, a: 0.5882353}
+    rgba: 2528374968
+  m_fontColor: {r: 0.72497344, g: 0.9433962, b: 0.70309716, a: 0.5882353}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5047,7 +5047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.00002861, y: 75}
+  m_AnchoredPosition: {x: 0.000017643, y: 116}
   m_SizeDelta: {x: 650, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6359536210998423182
@@ -5113,7 +5113,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
-  m_characterSpacing: 12
+  m_characterSpacing: 14
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
