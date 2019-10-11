@@ -33,6 +33,12 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    // Load level 1 (for testing purposes)
+    public void LoadGamePlay()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+
     // Quit the application
     public void QuitApplication()
     {
