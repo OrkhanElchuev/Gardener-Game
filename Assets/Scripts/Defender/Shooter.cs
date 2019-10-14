@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
+    [SerializeField] GameObject tomatoShooting;
+    [SerializeField] GameObject weapon;
+
     public void Shoot()
     {
-        return;
+        Instantiate(tomatoShooting, weapon.transform.position, Quaternion.identity);
     }
 }

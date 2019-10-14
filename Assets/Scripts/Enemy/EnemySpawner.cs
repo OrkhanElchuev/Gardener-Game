@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Enemy enemyPrefab;
     private bool spawn = true;
 
+    // Spawn enemies applying random delay in between each spawn
     IEnumerator Start()
     {
         while (spawn)
@@ -16,12 +17,6 @@ public class EnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minSpawnPeriod, maxSpawnPeriod));
             SpawnEnemy();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void SpawnEnemy()
