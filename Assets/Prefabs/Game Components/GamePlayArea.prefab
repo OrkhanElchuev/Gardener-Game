@@ -70,5 +70,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5279d7c4b8b5e4949b58a6d441255325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 1774931514084612969, guid: bb36e46d4ef57af49b5b7848fc0b71d8,
-    type: 3}
+  defender: {fileID: 888616712196128960, guid: bb36e46d4ef57af49b5b7848fc0b71d8, type: 3}
