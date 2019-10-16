@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DefenderSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject defender;
+    Defender defender;
 
     // On mouse click 
     private void OnMouseDown()
@@ -15,8 +15,8 @@ public class DefenderSpawn : MonoBehaviour
     // Instantiate defender object according to the mouse position
     private void SpawnDefender(Vector2 roundedWorldPos)
     {
-        GameObject newDefender = Instantiate(defender,
-        roundedWorldPos, Quaternion.identity) as GameObject;
+        Defender newDefender = Instantiate(defender,
+        roundedWorldPos, Quaternion.identity) as Defender;
     }
 
     private Vector2 SnapPlayAreaToGrid(Vector2 worldPosition)
@@ -24,6 +24,11 @@ public class DefenderSpawn : MonoBehaviour
         float modifiedX = Mathf.RoundToInt(worldPosition.x);
         float modifiedY = Mathf.RoundToInt(worldPosition.y);
         return new Vector2(modifiedX, modifiedY);
+    }
+
+    public void SetSelectedDefender(Defender defenderToSelect)
+    {
+        defender = defenderToSelect;
     }
 
     // Get the coordinates of mouse click within Game Play field

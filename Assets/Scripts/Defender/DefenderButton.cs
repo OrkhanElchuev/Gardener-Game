@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DefenderButton : MonoBehaviour
 {
+    [SerializeField] Defender defenderPrefab;
+
     // On click of mouse
     private void OnMouseDown()
     {
@@ -16,5 +18,7 @@ public class DefenderButton : MonoBehaviour
         }
         // When clicked show the original color of clicked item
         GetComponent<SpriteRenderer>().color = Color.white;
+        // Pass selected defender object to Setter function
+        FindObjectOfType<DefenderSpawn>().SetSelectedDefender(defenderPrefab);
     }
 }
