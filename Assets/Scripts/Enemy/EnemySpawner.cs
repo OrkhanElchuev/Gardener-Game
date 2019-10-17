@@ -21,6 +21,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+        Enemy newEnemy = Instantiate
+        (enemyPrefab, transform.position, Quaternion.identity) as Enemy;
+        // Instantiate enemies as a child of spawner object
+        newEnemy.transform.parent = transform; 
     }
 }

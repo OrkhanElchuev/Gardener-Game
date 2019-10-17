@@ -9,7 +9,7 @@ public class DefenderSpawn : MonoBehaviour
     // On mouse click 
     private void OnMouseDown()
     {
-        SpawnDefender(GetFieldClicked());
+        AttemptToPlaceDefender(GetFieldClicked());
     }
 
     // Instantiate defender object according to the mouse position
@@ -21,9 +21,24 @@ public class DefenderSpawn : MonoBehaviour
 
     private Vector2 SnapPlayAreaToGrid(Vector2 worldPosition)
     {
+        // Round the value to get relevant coordinates for placing objects
         float modifiedX = Mathf.RoundToInt(worldPosition.x);
         float modifiedY = Mathf.RoundToInt(worldPosition.y);
         return new Vector2(modifiedX, modifiedY);
+    }
+    
+    // Checking current star balance
+    private void AttemptToPlaceDefender(Vector2 gridPosition)
+    {
+        ShowStars showStars = FindObjectOfType<ShowStars>();
+        int defenderPrice = defender.GetStarPrice();
+        // Spawn selected item only if have enough stars to buy it
+        if (showStars.HaveEnoughStars(defenderPrice))
+        {
+            SpawnDefender(gridPosition);
+            // Decrease the amount of current stars after purchase
+            showStars.SpendStars(defenderPrice);
+        }
     }
 
     public void SetSelectedDefender(Defender defenderToSelect)

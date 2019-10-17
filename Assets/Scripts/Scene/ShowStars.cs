@@ -15,6 +15,11 @@ public class ShowStars : MonoBehaviour
         UpdateDisplay();
     }
 
+    public bool HaveEnoughStars(int amountOfStars)
+    {
+        return currentStars >= amountOfStars;
+    }
+
     public void AddStars(int amountOfStars)
     {
         currentStars += amountOfStars;
