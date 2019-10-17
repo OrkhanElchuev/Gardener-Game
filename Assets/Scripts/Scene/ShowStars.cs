@@ -6,7 +6,7 @@ using TMPro;
 
 public class ShowStars : MonoBehaviour
 {
-    [SerializeField] int stars = 100;
+    [SerializeField] int currentStars = 100;
     TextMeshProUGUI starText;
 
     void Start()
@@ -17,22 +17,23 @@ public class ShowStars : MonoBehaviour
 
     public void AddStars(int amountOfStars)
     {
-        stars += amountOfStars;
+        currentStars += amountOfStars;
         UpdateDisplay();
     }
 
     public void SpendStars(int amountOfStars)
     {
-        if (stars >= amountOfStars)
+        if (currentStars >= amountOfStars)
         {
-            stars -= amountOfStars;
+            currentStars -= amountOfStars;
             UpdateDisplay();
         }
     }
 
+    // Update star field in game
     private void UpdateDisplay()
     {
-        starText.text = stars.ToString();
+        starText.text = currentStars.ToString();
     }
 
 }
