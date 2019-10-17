@@ -6,24 +6,32 @@ public class Shooter : MonoBehaviour
 {
     [SerializeField] GameObject tomatoShooting;
     [SerializeField] GameObject weapon;
-    EnemySpawner myLaneSpawner;
+    private EnemySpawner myLaneSpawner;
+    private Animator animator;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         SetLaneSpawner();
     }
 
     private void Update()
+    {
+        DefenderState();
+    }
+
+    // Switch between idle and shooting states
+    private void DefenderState()
     {   
+        // If enemy spotted in the lane, run shooting animation
         if (IsEnemyInLane())
         {
-            // TODO switch to shooting
-            Debug.Log("Shoot");
+            animator.SetBool("isAttacking", true);
         }
+        // If the lane is empty, run idle animation
         else
         {
-            // TODO switch to idle
-            Debug.Log("Wait");
+            animator.SetBool("isAttacking", false);
         }
     }
 

@@ -461,6 +461,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 308073206790085528, guid: dc85d1e69ad1537428cbeaf3a2a60834,
+        type: 3}
+      propertyPath: minSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 308073206790085528, guid: dc85d1e69ad1537428cbeaf3a2a60834,
+        type: 3}
+      propertyPath: maxSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc85d1e69ad1537428cbeaf3a2a60834, type: 3}
 --- !u!1001 &2052696431302697162
@@ -530,6 +540,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2052696431836150815, guid: a28905d38f66e2f45a587d8481474fd7,
+        type: 3}
+      propertyPath: minSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052696431836150815, guid: a28905d38f66e2f45a587d8481474fd7,
+        type: 3}
+      propertyPath: maxSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a28905d38f66e2f45a587d8481474fd7, type: 3}
 --- !u!1001 &2215192646297999854
@@ -582,7 +602,7 @@ PrefabInstance:
     - target: {fileID: 959074958865046926, guid: b62afb2a2e81ca74088526a43bd9e5dc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 959074958865046926, guid: b62afb2a2e81ca74088526a43bd9e5dc,
         type: 3}
@@ -723,6 +743,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6781671726265580688}
+    - target: {fileID: 7295778563545463660, guid: 48b1f241346778342b88b11deb1434ec,
+        type: 3}
+      propertyPath: currentStars
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48b1f241346778342b88b11deb1434ec, type: 3}
 --- !u!1001 &2958541339655073889
@@ -791,6 +816,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958541339606867677, guid: c87df6aaa764747439e60ce94d83a352,
+        type: 3}
+      propertyPath: minSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958541339606867677, guid: c87df6aaa764747439e60ce94d83a352,
+        type: 3}
+      propertyPath: maxSpawnPeriod
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c87df6aaa764747439e60ce94d83a352, type: 3}
@@ -929,6 +964,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111355878816197566, guid: bd9398382b6102248b32d0bb8f9a4e44,
+        type: 3}
+      propertyPath: minSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111355878816197566, guid: bd9398382b6102248b32d0bb8f9a4e44,
+        type: 3}
+      propertyPath: maxSpawnPeriod
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9398382b6102248b32d0bb8f9a4e44, type: 3}
@@ -1142,6 +1187,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738020640300287201, guid: de14dc49b533be44693a63d3e5e6cbbb,
+        type: 3}
+      propertyPath: minSpawnPeriod
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738020640300287201, guid: de14dc49b533be44693a63d3e5e6cbbb,
+        type: 3}
+      propertyPath: maxSpawnPeriod
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de14dc49b533be44693a63d3e5e6cbbb, type: 3}
