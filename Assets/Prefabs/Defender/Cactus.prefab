@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 785439310158185392}
   - component: {fileID: 8540396149583799145}
+  - component: {fileID: 475350711069936531}
+  - component: {fileID: 1794338783}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -44,6 +46,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd843e0ebc50e84cbc1d5533bdaa825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPrice: 100
+--- !u!114 &475350711069936531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888616712196128960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5687fcc9ab3820044a3765bc3a8c5d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tomatoShooting: {fileID: 9135280648103212580, guid: 3a60de66fd053e3428ba228f9dd85a48,
+    type: 3}
+  weapon: {fileID: 7965744850062426640}
+--- !u!95 &1794338783
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888616712196128960}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f6d6d9dc4bcb8c749a31f2901ee589d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &751024109337618726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116,6 +153,12 @@ PrefabInstance:
 --- !u!4 &3411898821149494507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2681141049814033869, guid: 19f17adf1bd08a947a2238871a50df20,
+    type: 3}
+  m_PrefabInstance: {fileID: 751024109337618726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7965744850062426640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7268861262376528694, guid: 19f17adf1bd08a947a2238871a50df20,
     type: 3}
   m_PrefabInstance: {fileID: 751024109337618726}
   m_PrefabAsset: {fileID: 0}
