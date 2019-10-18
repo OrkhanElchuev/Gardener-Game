@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject tomatoShooting;
+    [SerializeField] GameObject shooting;
     [SerializeField] GameObject weapon;
     private EnemySpawner myLaneSpawner;
     private Animator animator;
@@ -22,7 +22,7 @@ public class Shooter : MonoBehaviour
 
     // Switch between idle and shooting states
     private void DefenderState()
-    {   
+    {
         // If enemy spotted in the lane, run shooting animation
         if (IsEnemyInLane())
         {
@@ -37,7 +37,7 @@ public class Shooter : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(tomatoShooting, weapon.transform.position, Quaternion.identity);
+        Instantiate(shooting, weapon.transform.position, Quaternion.identity);
     }
 
     // Check if there is an enemy in the same lane with current defender
