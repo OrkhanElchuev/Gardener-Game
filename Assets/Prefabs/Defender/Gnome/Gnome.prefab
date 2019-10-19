@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d499281c469d74a9c814c6174c3dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 20
+  healthPoints: 150
   deathParticleEffect: {fileID: 1906222994913036, guid: 2e378321fa6d59f4a9e472cec00e94a9,
     type: 3}
 --- !u!212 &105717035861559
