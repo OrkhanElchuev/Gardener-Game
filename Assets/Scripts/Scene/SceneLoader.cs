@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         // Set the current scene index to active scene index
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         // Wait till the background sound is finished(5 seconds)
@@ -37,6 +37,12 @@ public class SceneLoader : MonoBehaviour
     public void LoadGamePlay()
     {
         SceneManager.LoadScene("Level1");
+    }
+
+    // Load level lose screen
+    public void LoadLoseScene()
+    {
+        SceneManager.LoadScene("LoseScene");
     }
 
     // Quit the application
