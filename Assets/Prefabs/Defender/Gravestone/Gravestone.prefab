@@ -105,8 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d499281c469d74a9c814c6174c3dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 250
-  deathParticleEffect: {fileID: 0}
+  healthPoints: 20
+  deathParticleEffect: {fileID: 1906222994913036, guid: efe5b2d38c863e749b6285aa0c6c5646,
+    type: 3}
 --- !u!1001 &1224124895713061618
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b308661400551e647bc3a5df3db6af77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStars: 1000
+  currentStars: 500
 --- !u!1 &8633705919655050814
 GameObject:
   m_ObjectHideFlags: 0
