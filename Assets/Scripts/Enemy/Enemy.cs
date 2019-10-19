@@ -8,6 +8,20 @@ public class Enemy : MonoBehaviour
     private float currentEnemySpeed = 1.0f;
     private GameObject currentTarget;
 
+    // Happens before anything else is executed
+    private void Awake()
+    {
+        // Increment the number of enemies
+        FindObjectOfType<LevelManager>().EnemySpawned();
+    }
+
+    // On destroy of enemy object
+    private void OnDestroy()
+    {
+        // Decrement the number of enemies
+        FindObjectOfType<LevelManager>().EnemyDestroyed();
+    }
+
     // Update is called once per frame
     void Update()
     {

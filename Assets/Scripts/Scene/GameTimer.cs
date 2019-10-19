@@ -6,15 +6,21 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     [SerializeField] float levelTimeInSec = 10;
+    private bool levelFinishedTriggered = false;
 
     private void Update()
     {
+        // To not loop through Update method after level is finished
+        if (levelFinishedTriggered) { return; }
+        // Set the slider time with respect to level time
         GetComponent<Slider>().value = Time.timeSinceLevelLoad / levelTimeInSec;
-
+        // Check if level is finished considering time passed
         bool timerFinished = (Time.timeSinceLevelLoad >= levelTimeInSec);
-        if(timerFinished)
+        if (timerFinished)
         {
-            Debug.Log("level timer expired");
+            FindObjectOfType<LevelManager>().LevelTimerFinished();
+            // Stop the looping of Update
+            levelFinishedTriggered = true;
         }
     }
 }

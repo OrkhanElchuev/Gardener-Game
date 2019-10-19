@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private void Spawn(Enemy myEnemy)
+    private void CreateEnemy(Enemy myEnemy)
     {
         Enemy newEnemy = Instantiate
           (myEnemy, transform.position, Quaternion.identity) as Enemy;
@@ -27,9 +27,15 @@ public class EnemySpawner : MonoBehaviour
         newEnemy.transform.parent = transform;
     }
 
+    public void StopSpawningEnemies()
+    {
+        spawn = false;
+    }
+
     private void SpawnEnemy()
     {
+        // Spawn random enemies in array
         int enemyIndex = Random.Range(0, enemyPrefabArray.Length);
-        Spawn(enemyPrefabArray[enemyIndex]);
+        CreateEnemy(enemyPrefabArray[enemyIndex]);
     }
 }
