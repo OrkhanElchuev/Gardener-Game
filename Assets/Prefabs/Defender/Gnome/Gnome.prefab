@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6874211818337747295}
   - component: {fileID: 4287895836351782429}
   - component: {fileID: 7204539803702363148}
+  - component: {fileID: 1751280471}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd843e0ebc50e84cbc1d5533bdaa825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starPrice: 100
+  starPrice: 400
 --- !u!114 &4287895836351782429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +90,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99811316, y: 1.0005162}
   m_EdgeRadius: 0
+--- !u!95 &1751280471
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614742984865453489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2a23ef2b2f80af439dc277c5bdd7ead, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &105717035861559
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -159,7 +179,7 @@ PrefabInstance:
     - target: {fileID: 8733158485081958432, guid: 9a9de5570def18e4ca6dd7fc4cbaf38a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8733158485081958432, guid: 9a9de5570def18e4ca6dd7fc4cbaf38a,
         type: 3}
