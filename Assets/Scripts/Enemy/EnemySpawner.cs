@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] float minSpawnPeriod = 1.0f;
     [SerializeField] float maxSpawnPeriod = 5.0f;
-    [SerializeField] Enemy enemyPrefab;
+    [SerializeField] Enemy[] enemyPrefabArray;
     private bool spawn = true;
 
     // Spawn enemies applying random delay in between each spawn
@@ -19,11 +19,17 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy()
+    private void Spawn(Enemy myEnemy)
     {
         Enemy newEnemy = Instantiate
-        (enemyPrefab, transform.position, Quaternion.identity) as Enemy;
+          (myEnemy, transform.position, Quaternion.identity) as Enemy;
         // Instantiate enemies as a child of spawner object
-        newEnemy.transform.parent = transform; 
+        newEnemy.transform.parent = transform;
+    }
+
+    private void SpawnEnemy()
+    {
+        int enemyIndex = Random.Range(0, enemyPrefabArray.Length);
+        Spawn(enemyPrefabArray[enemyIndex]);
     }
 }
