@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,17 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         MoveEnemy();
+        UpdateAnimationState();
+    }
+
+    // Switch from attacking state animation to walking
+    private void UpdateAnimationState()
+    {
+        // If there is no target, move on 
+        if (!currentTarget)
+        {
+            GetComponent<Animator>().SetBool("isAttacking", false);
+        }
     }
 
     // Switch enemy to attacking state animation
@@ -19,6 +31,18 @@ public class Enemy : MonoBehaviour
         GetComponent<Animator>().SetBool("isAttacking", true);
         // Set current target of enemy
         currentTarget = target;
+    }
+
+    public void AttackCurrentTarget(float damage)
+    {
+        // Check if there is target
+        if (!currentTarget) { return; }
+        HealthPoints health = currentTarget.GetComponent<HealthPoints>();
+        // If current target has a health points then deal damage
+        if (health)
+        {
+            health.DealDamage(damage);
+        }
     }
 
     // Move enemy (independent from the FPS of device)
