@@ -478,7 +478,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.317
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -494,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8280cadced08114d99ca920219f4ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelTimeInSec: 3
 --- !u!1 &2094122153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b308661400551e647bc3a5df3db6af77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStars: 500
+  currentStars: 2000
 --- !u!1 &8633705919655050814
 GameObject:
   m_ObjectHideFlags: 0

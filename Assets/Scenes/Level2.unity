@@ -168,12 +168,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8899943971868635559}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &701226357 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2003355459929130557, guid: 005cba1d3a823e54aa167f89921355f7,
-    type: 3}
-  m_PrefabInstance: {fileID: 131298113244486236}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &756214532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2002033406382218382, guid: 43605700e84d7304f9410b8a334b6c45,
@@ -378,11 +372,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCompleteCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2003355459929130557, guid: 005cba1d3a823e54aa167f89921355f7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 868867479332827787, guid: 005cba1d3a823e54aa167f89921355f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,6 +479,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 005cba1d3a823e54aa167f89921355f7, type: 3}
+--- !u!1 &131298113244486237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2003355459929130557, guid: 005cba1d3a823e54aa167f89921355f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 131298113244486236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &308073208729018869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,6 +1607,6 @@ PrefabInstance:
         type: 3}
       propertyPath: winLabel
       value: 
-      objectReference: {fileID: 701226357}
+      objectReference: {fileID: 131298113244486237}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e71271cdbe5729f4a8a5743dc1477273, type: 3}
