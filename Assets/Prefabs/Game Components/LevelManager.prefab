@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winLabel: {fileID: 0}
+  loseLabel: {fileID: 0}
   delayForLoading: 4
 --- !u!82 &571584804
 AudioSource:

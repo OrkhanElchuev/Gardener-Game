@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ShowLives : MonoBehaviour
+public class Lives : MonoBehaviour
 {
-    [SerializeField] int lives = 100;
+    [SerializeField] int lives = 5;
     TextMeshProUGUI livesText;
-    private int damage = 20;
+    private int damage = 1;
 
     void Start()
     {
@@ -20,11 +20,6 @@ public class ShowLives : MonoBehaviour
     {
         lives -= damage;
         UpdateDisplay();
-        // Load loosing scene if base is destroyed
-        if(lives <= 0)
-        {
-            FindObjectOfType<SceneLoader>().LoadLoseScene();
-        }
     }
 
     // Update lives field in game

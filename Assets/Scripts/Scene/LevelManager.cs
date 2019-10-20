@@ -5,13 +5,16 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] GameObject winLabel;
+    [SerializeField] GameObject loseLabel;
     [SerializeField] float delayForLoading = 2.0f;
     private int numberOfEnemies = 0;
     private bool levelTimerFinished = false;
 
     private void Start()
     {
+        // Make labels invisible
         winLabel.SetActive(false);
+        loseLabel.SetActive(false);
     }
 
     public void LevelTimerFinished()
@@ -45,6 +48,12 @@ public class LevelManager : MonoBehaviour
         {
             StartCoroutine(ExecuteWinCondition());
         }
+    }
+
+    // Show loose canvas
+    public void ExecuteLoseCondition()
+    {
+        loseLabel.SetActive(true);
     }
 
     IEnumerator ExecuteWinCondition()
