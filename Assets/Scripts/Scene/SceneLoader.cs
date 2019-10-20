@@ -30,12 +30,15 @@ public class SceneLoader : MonoBehaviour
     // Load start scene
     public void LoadStartScene()
     {
+        // Resume game play
+        Time.timeScale = 1;
         SceneManager.LoadScene("StartScene");
     }
 
     // Load current scene again
     public void RestartScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(currentSceneIndex);
     }
 

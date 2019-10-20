@@ -26,10 +26,11 @@ public class DefenderSpawn : MonoBehaviour
         float modifiedY = Mathf.RoundToInt(worldPosition.y);
         return new Vector2(modifiedX, modifiedY);
     }
-    
+
     // Checking current star balance
     private void AttemptToPlaceDefender(Vector2 gridPosition)
     {
+        if (defender == null) { return; } // Avoid NullReferenceException
         ShowStars showStars = FindObjectOfType<ShowStars>();
         int defenderPrice = defender.GetStarPrice();
         // Spawn selected item only if have enough stars to buy it

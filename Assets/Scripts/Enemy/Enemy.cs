@@ -18,8 +18,13 @@ public class Enemy : MonoBehaviour
     // On destroy of enemy object
     private void OnDestroy()
     {
-        // Decrement the number of enemies
-        FindObjectOfType<LevelManager>().EnemyDestroyed();
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        // Avoid null reference exception
+        if (levelManager != null)
+        {
+            // Decrement the number of enemies
+            FindObjectOfType<LevelManager>().EnemyDestroyed();
+        }
     }
 
     // Update is called once per frame

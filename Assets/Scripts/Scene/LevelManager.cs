@@ -54,6 +54,8 @@ public class LevelManager : MonoBehaviour
     public void ExecuteLoseCondition()
     {
         loseLabel.SetActive(true);
+        // Stop Game play
+        Time.timeScale = 0;
     }
 
     IEnumerator ExecuteWinCondition()
