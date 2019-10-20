@@ -54,6 +54,12 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    // Load Options Scene
+    public void LoadOptionsScene()
+    {
+        SceneManager.LoadScene("OptionsScene");
+    }
+
     // Load level lose screen
     public void LoadLoseScene()
     {
