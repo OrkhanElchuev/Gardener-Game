@@ -18,7 +18,6 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(DelayLoadScene());
         }
-        Debug.Log("Start" + currentSceneIndex);
     }
 
     // Delay Scene loading

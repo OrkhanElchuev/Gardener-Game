@@ -5766,9 +5766,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5043847534943403513, guid: b39aa6a78ed5448468806173ec70037d,
-          type: 3}
-        m_MethodName: LoadGamePlay
+      - m_Target: {fileID: 0}
+        m_MethodName: LoadNextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
