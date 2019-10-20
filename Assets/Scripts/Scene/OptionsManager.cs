@@ -31,4 +31,9 @@ public class OptionsManager : MonoBehaviour
         PlayerPrefsManager.SetSound(soundSlider.value);
         FindObjectOfType<SceneLoader>().LoadStartScene();
     }
+
+    public void SetDefaults()
+    {
+        soundSlider.value = defaultSound;
+    }
 }
