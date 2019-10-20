@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(DelayLoadScene());
         }
+        Debug.Log("Start" + currentSceneIndex);
     }
 
     // Delay Scene loading
@@ -25,6 +26,18 @@ public class SceneLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(loadSceneDelayTime);
         LoadNextScene();
+    }
+
+    // Load start scene
+    public void LoadStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+
+    // Load current scene again
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     // Load next coming scene in the order 
