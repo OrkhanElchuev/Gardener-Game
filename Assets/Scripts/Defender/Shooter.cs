@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
+    const string PROJECTILE_PARENT_NAME = "Projectiles";
     [SerializeField] GameObject shooting;
     [SerializeField] GameObject weapon;
     private EnemySpawner myLaneSpawner;
     private Animator animator;
+    private GameObject projectileParent;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         SetLaneSpawner();
+        CreateProjectileParent();
+    }
+
+    private void CreateProjectileParent()
+    {
+        projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
+        if (!projectileParent)
+        {
+            projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
+        }
     }
 
     private void Update()
@@ -37,7 +49,10 @@ public class Shooter : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(shooting, weapon.transform.position, Quaternion.identity);
+        GameObject newProjectile = 
+        Instantiate(shooting, weapon.transform.position, Quaternion.identity)
+        as GameObject;
+        newProjectile.transform.parent = projectileParent.transform;
     }
 
     // Check if there is an enemy in the same lane with current defender

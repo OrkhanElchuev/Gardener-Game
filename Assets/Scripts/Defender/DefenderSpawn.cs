@@ -4,7 +4,23 @@ using UnityEngine;
 
 public class DefenderSpawn : MonoBehaviour
 {
+    const string DEFENDER_PARENT_NAME = "Defenders";
     Defender defender;
+    GameObject defenderParent;
+
+    private void Start()
+    {
+        CreateDefenderParent();
+    }
+
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
+    }
 
     // On mouse click 
     private void OnMouseDown()
@@ -17,6 +33,7 @@ public class DefenderSpawn : MonoBehaviour
     {
         Defender newDefender = Instantiate(defender,
         roundedWorldPos, Quaternion.identity) as Defender;
+        newDefender.transform.parent = defenderParent.transform;
     }
 
     private Vector2 SnapPlayAreaToGrid(Vector2 worldPosition)
