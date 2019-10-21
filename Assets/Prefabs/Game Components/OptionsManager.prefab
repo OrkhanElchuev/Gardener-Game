@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundSlider: {fileID: 0}
-  defaultSound: 0.7
+  defaultSound: 0.5
+  gameDifficultySlider: {fileID: 0}
+  defaultDifficulty: 0
