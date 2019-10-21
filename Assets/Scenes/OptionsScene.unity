@@ -144,6 +144,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725a9dec3bd43404dbaa89cfb84dd390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &219242254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2732067161243357570, guid: ecbdfd75b6e393b4b8c8a9744ff258c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1615292073541980912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &519420032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6781671726169916431, guid: 619bc44689fca1f41a5a3167a94324de,
@@ -554,22 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 37642524}
     - target: {fileID: 1747045577244953635, guid: ecbdfd75b6e393b4b8c8a9744ff258c8,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1747045577244953635, guid: ecbdfd75b6e393b4b8c8a9744ff258c8,
-        type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2520938706272853493, guid: ecbdfd75b6e393b4b8c8a9744ff258c8,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2520938706272853493, guid: ecbdfd75b6e393b4b8c8a9744ff258c8,
-        type: 3}
-      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2520938706272853493, guid: ecbdfd75b6e393b4b8c8a9744ff258c8,
@@ -676,6 +673,11 @@ PrefabInstance:
       propertyPath: soundSlider
       value: 
       objectReference: {fileID: 615908401}
+    - target: {fileID: 2145914027987863322, guid: 67290870a76fea84fbca4251d708a1e5,
+        type: 3}
+      propertyPath: gameDifficultySlider
+      value: 
+      objectReference: {fileID: 219242254}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67290870a76fea84fbca4251d708a1e5, type: 3}
 --- !u!1001 &6781671726265580687
