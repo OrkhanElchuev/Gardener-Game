@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    AudioSource audioSource;
+    private AudioSource audioSource;
 
     void Start()
     {
+        // Keep playing music after switching between scenes
         DontDestroyOnLoad(this);
         audioSource = GetComponent<AudioSource>();
-        audioSource.volume = PlayerPrefsManager.GetSound();
+        audioSource.volume = PlayerPrefsManager.GetMusicVolume();
     }
 
-    public void SetSound(float musicVolume)
+    // Set music volume to relevant value (according to options)
+    public void SetMusicVolume(float musicVolume)
     {
         audioSource.volume = musicVolume;
     }

@@ -386,29 +386,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6781671726169916656, guid: 619bc44689fca1f41a5a3167a94324de,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6781671726169916656, guid: 619bc44689fca1f41a5a3167a94324de,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6781671726169916656, guid: 619bc44689fca1f41a5a3167a94324de,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 619bc44689fca1f41a5a3167a94324de, type: 3}
---- !u!20 &6781671726265580688 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 6781671726169916656, guid: 619bc44689fca1f41a5a3167a94324de,
-    type: 3}
-  m_PrefabInstance: {fileID: 6781671726265580687}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7156261946534108621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439,17 +418,17 @@ PrefabInstance:
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
@@ -489,12 +468,12 @@ PrefabInstance:
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 1920.0001
       objectReference: {fileID: 0}
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1079.5118
+      value: 1078.8119
       objectReference: {fileID: 0}
     - target: {fileID: 7156261946522922661, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
@@ -526,11 +505,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7156261946522922662, guid: 54b6b0db62d63bf459d10e7711859bcc,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 6781671726265580688}
     - target: {fileID: 7255434205429172795, guid: 54b6b0db62d63bf459d10e7711859bcc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

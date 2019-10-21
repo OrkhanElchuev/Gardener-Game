@@ -12,7 +12,7 @@ public class OptionsManager : MonoBehaviour
 
     void Start()
     {
-        soundSlider.value = PlayerPrefsManager.GetSound();
+        soundSlider.value = PlayerPrefsManager.GetMusicVolume();
         gameDifficultySlider.value = PlayerPrefsManager.GetGameDifficulty();
     }
 
@@ -21,7 +21,7 @@ public class OptionsManager : MonoBehaviour
         var musicPlayer = FindObjectOfType<MusicPlayer>();
         if (musicPlayer)
         {
-            musicPlayer.SetSound(soundSlider.value);
+            musicPlayer.SetMusicVolume(soundSlider.value);
         }
         else
         {
@@ -31,7 +31,7 @@ public class OptionsManager : MonoBehaviour
 
     public void SaveAndExit()
     {
-        PlayerPrefsManager.SetSound(soundSlider.value);
+        PlayerPrefsManager.SetMusicVolume(soundSlider.value);
         PlayerPrefsManager.SetGameDifficulty(gameDifficultySlider.value);
         FindObjectOfType<SceneLoader>().LoadStartScene();
     }

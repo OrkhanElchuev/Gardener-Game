@@ -11,7 +11,7 @@ public class PlayerPrefsManager : MonoBehaviour
     const float MIN_DIFFICULTY = 0.0f;
     const float MAX_DIFFICULTY = 2.0f;
 
-    public static void SetSound(float volume)
+    public static void SetMusicVolume(float volume)
     {
         // Check for the correct value of volume in a range from 0 to 1
         if (volume >= MIN_SOUND && volume <= MAX_SOUND)
@@ -25,7 +25,7 @@ public class PlayerPrefsManager : MonoBehaviour
         }
     }
 
-    public static float GetSound()
+    public static float GetMusicVolume()
     {
         return PlayerPrefs.GetFloat(VOLUME_KEY);
     }

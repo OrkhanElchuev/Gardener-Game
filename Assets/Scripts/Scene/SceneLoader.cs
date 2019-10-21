@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    int currentSceneIndex;
+    private int currentSceneIndex;
     private int loadSceneDelayTime = 5;
 
-    // Start is called before the first frame update
     void Start()
     {
         // Set the current scene index to active scene index
@@ -49,7 +48,7 @@ public class SceneLoader : MonoBehaviour
     }
 
     // Load level 1 (for testing purposes)
-    public void LoadGamePlay()
+    public void LoadLevel1()
     {
         SceneManager.LoadScene("Level1");
     }

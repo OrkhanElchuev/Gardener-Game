@@ -20,7 +20,7 @@ public class DefenderButton : MonoBehaviour
         if (!priceText)
         {
             Debug.LogError(name + " has no price text");
-        }
+        } 
         else
         {
             priceText.text = defenderPrefab.GetStarPrice().ToString();
