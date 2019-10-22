@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] float minSpawnPeriod = 1.0f;
-    [SerializeField] float maxSpawnPeriod = 5.0f;
+    [SerializeField] float minSpawnPeriod = 1f;
+    [SerializeField] float maxSpawnPeriod = 5f;
     [SerializeField] Enemy[] enemyPrefabArray;
     private bool spawn = true;
 
@@ -23,7 +23,7 @@ public class EnemySpawner : MonoBehaviour
     {
         Enemy newEnemy = Instantiate
           (myEnemy, transform.position, Quaternion.identity) as Enemy;
-        // Instantiate enemies as a child of spawner object
+        // Instantiate enemies as a child of spawner object 
         newEnemy.transform.parent = transform;
     }
 

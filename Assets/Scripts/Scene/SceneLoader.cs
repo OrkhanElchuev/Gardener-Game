@@ -47,12 +47,6 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    // Load level 1 (for testing purposes)
-    public void LoadLevel1()
-    {
-        SceneManager.LoadScene("Level1");
-    }
-
     // Load Options Scene
     public void LoadOptionsScene()
     {

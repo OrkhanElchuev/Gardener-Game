@@ -7,8 +7,8 @@ using TMPro;
 public class ShowLives : MonoBehaviour
 {
     private float lives = 100f;
-    TextMeshProUGUI livesText;
     private int damage = 20;
+    TextMeshProUGUI livesText;
 
     void Start()
     {

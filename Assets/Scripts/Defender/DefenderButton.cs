@@ -11,23 +11,16 @@ public class DefenderButton : MonoBehaviour
 
     private void Start()
     {
-        LabelButtonPrice();
+        LabelDefenderPrice();
     }
 
-    private void LabelButtonPrice()
+    // Show defender prices 
+    private void LabelDefenderPrice()
     {
         TextMeshProUGUI priceText = GetComponentInChildren<TextMeshProUGUI>();
-        if (!priceText)
-        {
-            Debug.LogError(name + " has no price text");
-        } 
-        else
-        {
-            priceText.text = defenderPrefab.GetStarPrice().ToString();
-        }
+        // Get price of Defender
+        priceText.text = defenderPrefab.GetStarPrice().ToString();
     }
-
-
 
     // On click of mouse
     private void OnMouseDown()

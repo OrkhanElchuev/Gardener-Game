@@ -13,6 +13,7 @@ public class DefenderSpawn : MonoBehaviour
         CreateDefenderParent();
     }
 
+    // For organizing tree, put defenders under Defenders game object
     private void CreateDefenderParent()
     {
         defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);

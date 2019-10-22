@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] GameObject winLabel;
     [SerializeField] GameObject loseLabel;
-    [SerializeField] float delayForLoading = 2.0f;
+    [SerializeField] float delayForLoading = 2f;
     private int numberOfEnemies = 0;
     private bool levelTimerFinished = false;
 
@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
         loseLabel.SetActive(false);
     }
 
+    // Level progress is ended
     public void LevelTimerFinished()
     {
         levelTimerFinished = true;
@@ -54,7 +55,7 @@ public class LevelManager : MonoBehaviour
     public void ExecuteLoseCondition()
     {
         loseLabel.SetActive(true);
-        // Stop Game play
+        // Stop Game play activity
         Time.timeScale = 0;
     }
 

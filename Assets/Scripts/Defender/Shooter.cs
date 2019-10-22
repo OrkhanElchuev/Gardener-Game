@@ -18,6 +18,12 @@ public class Shooter : MonoBehaviour
         CreateProjectileParent();
     }
 
+    private void Update()
+    {
+        DefenderState();
+    }
+
+    // For organizing tree, put all projectiles under Projectiles game object
     private void CreateProjectileParent()
     {
         projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
@@ -25,11 +31,6 @@ public class Shooter : MonoBehaviour
         {
             projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
         }
-    }
-
-    private void Update()
-    {
-        DefenderState();
     }
 
     // Switch between idle and shooting states

@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class HealthPoints : MonoBehaviour
 {
-    [SerializeField] float healthPoints = 100.0f;
+    [SerializeField] float healthPoints = 100f;
     [SerializeField] GameObject deathParticleEffect;
-    private float explosionPeriod = 1.0f;
+    private float explosionPeriod = 1f;
 
     private void DeathParticleEffect()
     {
+        // Handle NullReferenceException
         if (!deathParticleEffect) { return; }
         // Create effect considering the position of object it is assigned to 
-        GameObject deathPArticleObj = Instantiate(deathParticleEffect,
+        GameObject deathParticleObj = Instantiate(deathParticleEffect,
          transform.position, Quaternion.identity);
-        Destroy(deathPArticleObj, explosionPeriod);
+        // Stop running death particle after time period
+        Destroy(deathParticleObj, explosionPeriod);
     }
 
     public void DealDamage(float damage)
@@ -22,6 +24,7 @@ public class HealthPoints : MonoBehaviour
         healthPoints -= damage;
         if (healthPoints <= 0)
         {
+            // Run explosion effect
             DeathParticleEffect();
             Destroy(gameObject);
         }

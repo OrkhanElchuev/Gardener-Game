@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float speed = 1.0f;
+    private float speed = 1f;
     [SerializeField] int damageAmount = 50;
 
     // Update is called once per frame

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private float currentEnemySpeed = 1.0f;
+    private float currentEnemySpeed = 1f;
     private GameObject currentTarget;
 
     // Happens before anything else is executed

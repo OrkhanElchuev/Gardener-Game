@@ -5,23 +5,22 @@ using UnityEngine.UI;
 
 public class OptionsManager : MonoBehaviour
 {
-    [SerializeField] Slider soundSlider;
-    [SerializeField] float defaultSound = 0.7f;
+    [SerializeField] Slider musicVolumeSlider;
+    [SerializeField] float defaultSound = 0.5f;
     [SerializeField] Slider gameDifficultySlider;
     [SerializeField] float defaultDifficulty = 0f;
 
     void Start()
     {
-        soundSlider.value = PlayerPrefsManager.GetMusicVolume();
-        gameDifficultySlider.value = PlayerPrefsManager.GetGameDifficulty();
+        SetCurrentValuesOfSliders();
     }
 
     void Update()
     {
-        var musicPlayer = FindObjectOfType<MusicPlayer>();
+        MusicPlayer musicPlayer = FindObjectOfType<MusicPlayer>();
         if (musicPlayer)
         {
-            musicPlayer.SetMusicVolume(soundSlider.value);
+            musicPlayer.SetMusicVolume(musicVolumeSlider.value);
         }
         else
         {
@@ -29,16 +28,23 @@ public class OptionsManager : MonoBehaviour
         }
     }
 
-    public void SaveAndExit()
+    private void SetCurrentValuesOfSliders()
     {
-        PlayerPrefsManager.SetMusicVolume(soundSlider.value);
-        PlayerPrefsManager.SetGameDifficulty(gameDifficultySlider.value);
-        FindObjectOfType<SceneLoader>().LoadStartScene();
+        musicVolumeSlider.value = PlayerPrefsManager.GetMusicVolume();
+        gameDifficultySlider.value = PlayerPrefsManager.GetGameDifficulty();
     }
 
-    public void SetDefaults()
+    private void SetDefaults()
     {
-        soundSlider.value = defaultSound;
+        musicVolumeSlider.value = defaultSound;
         gameDifficultySlider.value = defaultDifficulty;
+    }
+
+    // Store relevant values in player preferences
+    public void SaveAndExit()
+    {
+        PlayerPrefsManager.SetMusicVolume(musicVolumeSlider.value);
+        PlayerPrefsManager.SetGameDifficulty(gameDifficultySlider.value);
+        FindObjectOfType<SceneLoader>().LoadStartScene();
     }
 }

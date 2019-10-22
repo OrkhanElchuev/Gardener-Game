@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour
 {
-    [SerializeField] float levelTimeInSec = 10;
+    [SerializeField] float levelTimeInSec = 10f;
     bool levelFinishedTriggered = false;
 
     private void Update()

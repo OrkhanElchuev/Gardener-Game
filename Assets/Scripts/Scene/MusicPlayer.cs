@@ -11,6 +11,7 @@ public class MusicPlayer : MonoBehaviour
         // Keep playing music after switching between scenes
         DontDestroyOnLoad(this);
         audioSource = GetComponent<AudioSource>();
+        // Get stored music volume from player preferences
         audioSource.volume = PlayerPrefsManager.GetMusicVolume();
     }
 

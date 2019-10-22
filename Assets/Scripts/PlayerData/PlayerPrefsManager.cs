@@ -6,18 +6,18 @@ public class PlayerPrefsManager : MonoBehaviour
 {
     const string VOLUME_KEY = "sound";
     const string DIFFICULTY_KEY = "difficulty";
-    const float MIN_SOUND = 0.0f;
-    const float MAX_SOUND = 1.0f;
-    const float MIN_DIFFICULTY = 0.0f;
-    const float MAX_DIFFICULTY = 2.0f;
+    const float MIN_SOUND = 0f;
+    const float MAX_SOUND = 1f;
+    const float MIN_DIFFICULTY = 0f;
+    const float MAX_DIFFICULTY = 2f;
 
-    public static void SetMusicVolume(float volume)
+    public static void SetMusicVolume(float musicVolume)
     {
         // Check for the correct value of volume in a range from 0 to 1
-        if (volume >= MIN_SOUND && volume <= MAX_SOUND)
+        if (musicVolume >= MIN_SOUND && musicVolume <= MAX_SOUND)
         {
-            Debug.Log("Sound set to " + volume);
-            PlayerPrefs.SetFloat(VOLUME_KEY, volume);
+            // Set volume value in player preferences
+            PlayerPrefs.SetFloat(VOLUME_KEY, musicVolume);
         }
         else
         {
@@ -32,8 +32,10 @@ public class PlayerPrefsManager : MonoBehaviour
 
     public static void SetGameDifficulty(float gameDifficulty)
     {
+        // Check if game difficulty value is in a range from 0 to 2() 
         if (gameDifficulty >= MIN_DIFFICULTY && gameDifficulty <= MAX_DIFFICULTY)
         {
+            // Set game difficulty value in player preferences
             PlayerPrefs.SetFloat(DIFFICULTY_KEY, gameDifficulty);
         }
         else

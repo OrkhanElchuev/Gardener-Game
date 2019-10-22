@@ -28,6 +28,7 @@ public class ShowStars : MonoBehaviour
 
     public void SpendStars(int amountOfStars)
     {
+        // Check if have enough stars to spend
         if (currentStars >= amountOfStars)
         {
             currentStars -= amountOfStars;
