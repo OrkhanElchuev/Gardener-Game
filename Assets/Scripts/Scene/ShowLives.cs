@@ -6,7 +6,6 @@ using TMPro;
 
 public class ShowLives : MonoBehaviour
 {
-    // private float lives = 100f;
     private int damage = 20;
     private float livesAmount;
     TextMeshProUGUI livesText;

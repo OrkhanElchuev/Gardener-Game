@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] float minSpawnPeriod = 1f;
-    [SerializeField] float maxSpawnPeriod = 5f;
     [SerializeField] Enemy[] enemyPrefabArray;
+    private float minSpawnPeriod;
+    private float maxSpawnPeriod;
     private bool spawn = true;
+
+    private void Awake()
+    {
+        // Initialize relevant values according to the difficulty configs
+        minSpawnPeriod = FindObjectOfType<DifficultySettings>().UpdateMinSpawnPeriod();
+        maxSpawnPeriod = FindObjectOfType<DifficultySettings>().UpdateMaxSpawnPeriod();
+    }
 
     // Spawn enemies applying random delay in between each spawn
     IEnumerator Start()
