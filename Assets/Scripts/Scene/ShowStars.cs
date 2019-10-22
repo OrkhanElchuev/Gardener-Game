@@ -6,32 +6,33 @@ using TMPro;
 
 public class ShowStars : MonoBehaviour
 {
-    [SerializeField] int currentStars = 100;
+    private int difficultyStars;
     TextMeshProUGUI starText;
 
     void Start()
     {
+        difficultyStars = FindObjectOfType<DifficultySettings>().UpdateInitialStarsAmount();
         starText = GetComponent<TextMeshProUGUI>();
         UpdateDisplay();
     }
 
     public bool HaveEnoughStars(int amountOfStars)
     {
-        return currentStars >= amountOfStars;
+        return difficultyStars >= amountOfStars;
     }
 
     public void AddStars(int amountOfStars)
     {
-        currentStars += amountOfStars;
+        difficultyStars += amountOfStars;
         UpdateDisplay();
     }
 
     public void SpendStars(int amountOfStars)
     {
         // Check if have enough stars to spend
-        if (currentStars >= amountOfStars)
+        if (difficultyStars >= amountOfStars)
         {
-            currentStars -= amountOfStars;
+            difficultyStars -= amountOfStars;
             UpdateDisplay();
         }
     }
@@ -39,7 +40,7 @@ public class ShowStars : MonoBehaviour
     // Update star field in game
     private void UpdateDisplay()
     {
-        starText.text = currentStars.ToString();
+        starText.text = difficultyStars.ToString();
     }
 
 }

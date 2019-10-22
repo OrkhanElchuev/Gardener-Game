@@ -6,37 +6,24 @@ using TMPro;
 
 public class ShowLives : MonoBehaviour
 {
-    private float lives = 100f;
+    // private float lives = 100f;
     private int damage = 20;
+    private float livesAmount;
     TextMeshProUGUI livesText;
 
-    void Start()
+    private void Start()
     {
-        DifficultySettings();
+        livesAmount = FindObjectOfType<DifficultySettings>().UpdateLivesAmount();
         livesText = GetComponent<TextMeshProUGUI>();
         UpdateDisplay();
     }
 
-    // Temporary method, will be modified later
-    // CREATED FOR TESTING PURPOSES
-    private void DifficultySettings()
-    {
-        if (PlayerPrefsManager.GetGameDifficulty() == 1)
-        {
-            lives = 50;
-        }
-        else if (PlayerPrefsManager.GetGameDifficulty() == 2)
-        {
-            lives = 20;
-        }
-    }
-
     public void DecrementLife()
     {
-        lives -= damage;
+        livesAmount -= damage;
         UpdateDisplay();
         // Load loosing scene if base is destroyed
-        if (lives <= 0)
+        if (livesAmount <= 0)
         {
             FindObjectOfType<LevelManager>().ExecuteLoseCondition();
         }
@@ -45,6 +32,6 @@ public class ShowLives : MonoBehaviour
     // Update lives field in game
     private void UpdateDisplay()
     {
-        livesText.text = lives.ToString();
+        livesText.text = livesAmount.ToString();
     }
 }

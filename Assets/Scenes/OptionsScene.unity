@@ -579,7 +579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2145914027987863322, guid: 67290870a76fea84fbca4251d708a1e5,
         type: 3}
-      propertyPath: soundSlider
+      propertyPath: musicVolumeSlider
       value: 
       objectReference: {fileID: 1750477740}
     - target: {fileID: 2145914027987863322, guid: 67290870a76fea84fbca4251d708a1e5,

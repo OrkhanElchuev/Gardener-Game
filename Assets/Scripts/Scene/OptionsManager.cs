@@ -22,10 +22,6 @@ public class OptionsManager : MonoBehaviour
         {
             musicPlayer.SetMusicVolume(musicVolumeSlider.value);
         }
-        else
-        {
-            Debug.LogWarning("No music player found");
-        }
     }
 
     private void SetCurrentValuesOfSliders()
