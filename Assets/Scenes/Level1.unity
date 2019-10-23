@@ -601,6 +601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner2
       objectReference: {fileID: 0}
+    - target: {fileID: 308073206790085534, guid: dc85d1e69ad1537428cbeaf3a2a60834,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 308073206790085529, guid: dc85d1e69ad1537428cbeaf3a2a60834,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1120,16 +1125,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3873558587312176458, guid: 48b1f241346778342b88b11deb1434ec,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3873558587312176458, guid: 48b1f241346778342b88b11deb1434ec,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48b1f241346778342b88b11deb1434ec, type: 3}
 --- !u!1001 &2958541339655073889
@@ -1293,6 +1288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawner4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111355878816197564, guid: bd9398382b6102248b32d0bb8f9a4e44,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6111355878816197567, guid: bd9398382b6102248b32d0bb8f9a4e44,
         type: 3}

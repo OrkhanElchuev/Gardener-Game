@@ -50,7 +50,7 @@ public class Shooter : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject newProjectile = 
+        GameObject newProjectile =
         Instantiate(shooting, weapon.transform.position, Quaternion.identity)
         as GameObject;
         newProjectile.transform.parent = projectileParent.transform;
@@ -64,7 +64,10 @@ public class Shooter : MonoBehaviour
         {
             return false;
         }
-        return true;
+        else
+        {
+            return true;
+        }
     }
 
     private void SetLaneSpawner()

@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
         // Initialize relevant values according to the difficulty configs
         minSpawnPeriod = FindObjectOfType<DifficultySettings>().UpdateMinSpawnPeriod();
         maxSpawnPeriod = FindObjectOfType<DifficultySettings>().UpdateMaxSpawnPeriod();
-    }
+    } 
 
     // Spawn enemies applying random delay in between each spawn
     IEnumerator Start()
@@ -43,6 +43,13 @@ public class EnemySpawner : MonoBehaviour
     {
         // Spawn random enemies in array
         int enemyIndex = Random.Range(0, enemyPrefabArray.Length);
-        CreateEnemy(enemyPrefabArray[enemyIndex]);
+        if (enemyIndex >= 0)
+        {
+            CreateEnemy(enemyPrefabArray[enemyIndex]);
+        }
+        else
+        {
+            return;
+        }
     }
 }

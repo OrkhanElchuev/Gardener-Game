@@ -24,21 +24,21 @@ public class DifficultySettings : MonoBehaviour
         {
             case 0:
                 lives = 100f;
-                amountOfInitialStars = 1000;
-                enemySpawnMinPeriod = 2f;
-                enemySpawnMaxPeriod = 8f;
+                amountOfInitialStars = 800;
+                enemySpawnMinPeriod = 4f;
+                enemySpawnMaxPeriod = 12f;
                 break;
             case 1:
                 lives = 60f;
-                amountOfInitialStars = 700;
-                enemySpawnMinPeriod = 1.5f;
-                enemySpawnMaxPeriod = 6f;
+                amountOfInitialStars = 600;
+                enemySpawnMinPeriod = 3f;
+                enemySpawnMaxPeriod = 8f;
                 break;
             case 2:
                 lives = 40f;
-                amountOfInitialStars = 500;
-                enemySpawnMinPeriod = 1f;
-                enemySpawnMaxPeriod = 4f;
+                amountOfInitialStars = 400;
+                enemySpawnMinPeriod = 2f;
+                enemySpawnMaxPeriod = 6f;
                 break;
         }
     }
