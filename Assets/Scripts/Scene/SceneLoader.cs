@@ -44,6 +44,8 @@ public class SceneLoader : MonoBehaviour
     // Load next coming scene in the order 
     public void LoadNextScene()
     {
+        // Resume game process
+        Time.timeScale = 1;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 

@@ -69,8 +69,8 @@ public class LevelManager : MonoBehaviour
         winLabel.SetActive(true);
         // Play winning sound
         GetComponent<AudioSource>().Play();
+        // Stop game process
+        Time.timeScale = 0;
         yield return new WaitForSeconds(delayForLoading);
-        // After delay load next scene
-        FindObjectOfType<SceneLoader>().LoadNextScene();
     }
 }
