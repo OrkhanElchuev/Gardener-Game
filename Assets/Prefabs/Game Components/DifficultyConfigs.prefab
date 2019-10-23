@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580091419ee11be449bee03e133b9d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starsEasyDifficulty: 1000
+  starsMediumDifficulty: 800
+  starsHardDifficulty: 600

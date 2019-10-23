@@ -8,7 +8,9 @@ public class DifficultySettings : MonoBehaviour
     private float enemySpawnMinPeriod = 1f;
     private float enemySpawnMaxPeriod = 5f;
 
-    private int amountOfInitialStars = 1000;
+    [SerializeField] int starsEasyDifficulty = 1000;
+    [SerializeField] int starsMediumDifficulty = 1000;
+    [SerializeField] int starsHardDifficulty = 1000;
 
     private void Awake()
     {
@@ -24,21 +26,18 @@ public class DifficultySettings : MonoBehaviour
         {
             case 0:
                 lives = 100f;
-                amountOfInitialStars = 800;
-                enemySpawnMinPeriod = 4f;
-                enemySpawnMaxPeriod = 12f;
+                enemySpawnMinPeriod = 6f;
+                enemySpawnMaxPeriod = 20f;
                 break;
             case 1:
-                lives = 60f;
-                amountOfInitialStars = 600;
-                enemySpawnMinPeriod = 3f;
-                enemySpawnMaxPeriod = 8f;
+                lives = 80f;
+                enemySpawnMinPeriod = 5f;
+                enemySpawnMaxPeriod = 13f;
                 break;
             case 2:
-                lives = 40f;
-                amountOfInitialStars = 400;
-                enemySpawnMinPeriod = 2f;
-                enemySpawnMaxPeriod = 6f;
+                lives = 50f;
+                enemySpawnMinPeriod = 4f;
+                enemySpawnMaxPeriod = 10f;
                 break;
         }
     }
@@ -54,7 +53,22 @@ public class DifficultySettings : MonoBehaviour
 
     public int UpdateInitialStarsAmount()
     {
-        return amountOfInitialStars;
+        // 1000 is a default value
+        int starsAmount = 1000;
+        // Return value according to the level difficulty
+        switch (PlayerPrefsManager.GetGameDifficulty())
+        {
+            case 0:
+                starsAmount = starsEasyDifficulty;
+                break;
+            case 1:
+                starsAmount = starsMediumDifficulty;
+                break;
+            case 2:
+                starsAmount = starsHardDifficulty;
+                break;
+        }
+        return starsAmount;
     }
 
     public float UpdateLivesAmount()

@@ -9,12 +9,14 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float delayForLoading = 2f;
     private int numberOfEnemies = 0;
     private bool levelTimerFinished = false;
+    private ShowStars showStars;
 
     private void Start()
     {
         // Make labels invisible
         winLabel.SetActive(false);
         loseLabel.SetActive(false);
+        showStars = FindObjectOfType<ShowStars>();
     }
 
     // Level progress is ended
@@ -44,6 +46,8 @@ public class LevelManager : MonoBehaviour
     public void EnemyDestroyed()
     {
         numberOfEnemies--;
+        // Increase star amount by a random number
+        showStars.AddStars(Random.Range(5, 17));
         // If enemies are killed and level time is over, finish level
         if (numberOfEnemies <= 0 && levelTimerFinished)
         {
