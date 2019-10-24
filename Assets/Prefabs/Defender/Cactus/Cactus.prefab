@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd843e0ebc50e84cbc1d5533bdaa825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starPrice: 100
+  starPrice: 120
 --- !u!114 &475350711069936531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,15 +191,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7268861262376528695, guid: 19f17adf1bd08a947a2238871a50df20,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 7268861262376528694, guid: 19f17adf1bd08a947a2238871a50df20,
         type: 3}
       propertyPath: m_Name
       value: WeaponCactus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268861262376528695, guid: 19f17adf1bd08a947a2238871a50df20,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3018507717589434494, guid: 19f17adf1bd08a947a2238871a50df20, type: 3}

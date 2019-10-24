@@ -31,13 +31,13 @@ public class DifficultySettings : MonoBehaviour
                 break;
             case 1:
                 lives = 80f;
-                enemySpawnMinPeriod = 5f;
-                enemySpawnMaxPeriod = 13f;
+                enemySpawnMinPeriod = 5.5f;
+                enemySpawnMaxPeriod = 13.5f;
                 break;
             case 2:
                 lives = 50f;
-                enemySpawnMinPeriod = 4f;
-                enemySpawnMaxPeriod = 10f;
+                enemySpawnMinPeriod = 4.5f;
+                enemySpawnMaxPeriod = 11f;
                 break;
         }
     }

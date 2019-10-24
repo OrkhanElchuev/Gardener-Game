@@ -317,11 +317,11 @@ Transform:
   - {fileID: 698868556}
   - {fileID: 571584803}
   - {fileID: 119929752}
-  - {fileID: 528541001}
   - {fileID: 519420032}
   - {fileID: 414877427}
   - {fileID: 15430504}
   - {fileID: 5186091382591621933}
+  - {fileID: 528541001}
   - {fileID: 1935540385}
   - {fileID: 7157498986424525940}
   m_Father: {fileID: 1643906828}
@@ -521,7 +521,7 @@ PrefabInstance:
     - target: {fileID: 868867479332827787, guid: 005cba1d3a823e54aa167f89921355f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 868867479332827787, guid: 005cba1d3a823e54aa167f89921355f7,
         type: 3}
@@ -714,7 +714,7 @@ PrefabInstance:
     - target: {fileID: 6800638227816903363, guid: ae89cff4020bd854c9e390b1731b9782,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6800638227816903363, guid: ae89cff4020bd854c9e390b1731b9782,
         type: 3}
@@ -1182,7 +1182,7 @@ PrefabInstance:
     - target: {fileID: 2753321541483435927, guid: 48b1f241346778342b88b11deb1434ec,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2753321541483435927, guid: 48b1f241346778342b88b11deb1434ec,
         type: 3}
@@ -1549,7 +1549,7 @@ PrefabInstance:
     - target: {fileID: 6634316608033624954, guid: 826d9ba2b3671de47852b828fb745410,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6634316608033624954, guid: 826d9ba2b3671de47852b828fb745410,
         type: 3}
@@ -1618,7 +1618,7 @@ PrefabInstance:
     - target: {fileID: 6781671726169916431, guid: 619bc44689fca1f41a5a3167a94324de,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6781671726169916431, guid: 619bc44689fca1f41a5a3167a94324de,
         type: 3}

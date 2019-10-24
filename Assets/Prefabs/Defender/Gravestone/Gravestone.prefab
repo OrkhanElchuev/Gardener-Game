@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd843e0ebc50e84cbc1d5533bdaa825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starPrice: 100
+  starPrice: 150
 --- !u!61 &8586211955635409456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d499281c469d74a9c814c6174c3dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 200
+  healthPoints: 250
   deathParticleEffect: {fileID: 1906222994913036, guid: efe5b2d38c863e749b6285aa0c6c5646,
     type: 3}
 --- !u!114 &3146138606753556332
