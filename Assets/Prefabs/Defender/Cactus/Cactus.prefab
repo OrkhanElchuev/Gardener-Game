@@ -96,7 +96,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0029574633, y: -0.023149729}
+  m_Offset: {x: 0.0037137866, y: -0.015977025}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -107,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96732163, y: 0.98595524}
+  m_Size: {x: 0.999406, y: 1.0003006}
   m_EdgeRadius: 0
 --- !u!114 &8765815839972779272
 MonoBehaviour:
@@ -191,18 +191,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7268861262376528694, guid: 19f17adf1bd08a947a2238871a50df20,
-        type: 3}
-      propertyPath: m_Name
-      value: WeaponCactus
-      objectReference: {fileID: 0}
     - target: {fileID: 7268861262376528695, guid: 19f17adf1bd08a947a2238871a50df20,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.4
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3018507717589434494, guid: 19f17adf1bd08a947a2238871a50df20, type: 3}
+    - target: {fileID: 7268861262376528694, guid: 19f17adf1bd08a947a2238871a50df20,
+        type: 3}
+      propertyPath: m_Name
+      value: WeaponCactus
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f17adf1bd08a947a2238871a50df20, type: 3}
 --- !u!4 &3411898821149494507 stripped
 Transform:
