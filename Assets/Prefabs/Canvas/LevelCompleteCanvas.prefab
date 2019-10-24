@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &868867479332827787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_TargetDisplay: 0
 --- !u!114 &2021107550078272123
 MonoBehaviour:
@@ -135,8 +135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 226.7}
-  m_SizeDelta: {x: 1120.8, y: 294.7}
+  m_AnchoredPosition: {x: -0.012375, y: 0.002943}
+  m_SizeDelta: {x: 2250, y: 1098.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2297408744862616401
 CanvasRenderer:
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.50812554, g: 0.8679245, b: 0.42168033, a: 0.3137255}
+  m_Color: {r: 0.66078347, g: 0.9339623, b: 0.59474015, a: 0.3137255}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -208,8 +208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0099106, y: 226.72}
-  m_SizeDelta: {x: 1120.8, y: 294.74}
+  m_AnchoredPosition: {x: -0.000045776, y: 0.0027695}
+  m_SizeDelta: {x: 1920, y: 1078.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7785085383740081038
 CanvasRenderer:
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.000038176968}
+  m_margin: {x: 0, y: 0, z: 0, w: 536.59}
   m_textInfo:
     textComponent: {fileID: 5386198202192838708}
     characterCount: 15

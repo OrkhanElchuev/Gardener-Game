@@ -26,8 +26,8 @@ public class DifficultySettings : MonoBehaviour
         {
             case 0:
                 lives = 100f;
-                enemySpawnMinPeriod = 8f;
-                enemySpawnMaxPeriod = 22f;
+                enemySpawnMinPeriod = 15f;
+                enemySpawnMaxPeriod = 20f;
                 break;
             case 1:
                 lives = 80f;

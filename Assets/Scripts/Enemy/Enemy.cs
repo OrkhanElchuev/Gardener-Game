@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private float currentEnemySpeed = 1f;
-    private GameObject currentTarget;
+    GameObject currentTarget;
 
     // Happens before anything else is executed
     private void Awake()
