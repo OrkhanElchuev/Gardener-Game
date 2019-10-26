@@ -486,7 +486,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 693308059}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -993,16 +993,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2092533432}
     m_Modifications:
-    - target: {fileID: 6284763177314196497, guid: 48b1f241346778342b88b11deb1434ec,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2002825374}
-    - target: {fileID: 6284763177314196497, guid: 48b1f241346778342b88b11deb1434ec,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseGame
-      objectReference: {fileID: 0}
     - target: {fileID: 2753321541483435928, guid: 48b1f241346778342b88b11deb1434ec,
         type: 3}
       propertyPath: m_Name
@@ -1113,6 +1103,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6284763177314196497, guid: 48b1f241346778342b88b11deb1434ec,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2002825374}
+    - target: {fileID: 6284763177314196497, guid: 48b1f241346778342b88b11deb1434ec,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseGame
+      objectReference: {fileID: 0}
     - target: {fileID: 2753321541483435924, guid: 48b1f241346778342b88b11deb1434ec,
         type: 3}
       propertyPath: m_Camera
@@ -1142,11 +1142,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8842189790872673323, guid: 48b1f241346778342b88b11deb1434ec,
-        type: 3}
-      propertyPath: levelTimeInSec
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 2947281493472539102, guid: 48b1f241346778342b88b11deb1434ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1156,6 +1151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8842189790872673323, guid: 48b1f241346778342b88b11deb1434ec,
+        type: 3}
+      propertyPath: levelTimeInSec
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48b1f241346778342b88b11deb1434ec, type: 3}
@@ -1881,7 +1881,7 @@ PrefabInstance:
     - target: {fileID: 2958541339606867677, guid: c87df6aaa764747439e60ce94d83a352,
         type: 3}
       propertyPath: enemyPrefabArray.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2958541339606867677, guid: c87df6aaa764747439e60ce94d83a352,
         type: 3}
@@ -2051,7 +2051,7 @@ PrefabInstance:
     - target: {fileID: 6111355878816197566, guid: bd9398382b6102248b32d0bb8f9a4e44,
         type: 3}
       propertyPath: enemyPrefabArray.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6111355878816197566, guid: bd9398382b6102248b32d0bb8f9a4e44,
         type: 3}
