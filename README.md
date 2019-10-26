@@ -1,8 +1,11 @@
 # Gardener 
 Garden defender Tower Defense game. Created for learning and advancing purposes in Unity and C#.
 Defend your garden from hungry animals, use variations of unique defenders and use the strategy to not let any creature harm your garden!
-
-### Tools used while developing this project
+## Screenshots
+![](Images/StartMenu.png)
+![](Images/OptionsMenu.png)
+![](Images/GamePlay.png)
+## Tools used while developing this project
 - Unity.
 - Visual Studio Code. Coding in C# Programming Language.
 - GitBash.
