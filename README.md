@@ -27,7 +27,7 @@ Defend your garden from hungry animals, use variations of unique defenders and u
 ### For Android devices
 - Open Folder Named "Game" and proceed to AnrdoidAPK folder
 - Download Gardener.apk
-- Connect your phone and drag and drop the apk file 
+- Connect your phone and drag and drop the apk file OR open this page on phone and directly download
 - Find the apk file in your phone's main files folder (My Files)
 - Install the game and enjoy!
 ### Known bugs
