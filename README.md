@@ -34,7 +34,7 @@ Defend your garden from hungry animals, use variations of unique defenders and u
 - Too much enemies spawn at once.
 ## Contacts 
 - E-mail address orkhan.elchuev@gmail.com
-- https://github.com/OrkhanElchuev/Space-Invader-Game
+- https://github.com/OrkhanElchuev/Gardener-Game
 ## Aknowledgements
 - [dafont](https://www.dafont.com/de/)
 - [LunaPic](https://www6.lunapic.com/editor/)
