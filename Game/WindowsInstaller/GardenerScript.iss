@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Gardener"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.4"
 #define MyAppPublisher "ElchuevOrkhan"
 #define MyAppURL "https://github.com/OrkhanElchuev/Gardener-Game"
 #define MyAppExeName "Gardener.exe"
@@ -10,7 +10,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{E1656273-DC13-4111-9E78-E0E4C0111D0D}
+AppId={{D5E51C0F-BB9D-4041-B0DC-4BB7C81DE84A}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -35,11 +35,11 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Orkhan\Desktop\gardener\Gardener.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Orkhan\Desktop\gardener\Gardener_Data\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Orkhan\Desktop\gardener\MonoBleedingEdge\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Orkhan\Desktop\gardener\UnityCrashHandler64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Orkhan\Desktop\gardener\UnityPlayer.dll\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Orkhan\Desktop\Gardener\Gardener.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Orkhan\Desktop\Gardener\Gardener_Data\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Orkhan\Desktop\Gardener\MonoBleedingEdge\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Orkhan\Desktop\Gardener\UnityCrashHandler64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Orkhan\Desktop\Gardener\UnityPlayer.dll\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
