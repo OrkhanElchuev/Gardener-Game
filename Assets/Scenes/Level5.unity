@@ -1893,7 +1893,7 @@ PrefabInstance:
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsHardDifficulty
-      value: 900
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0edd547421565df4c8d47e861aada511, type: 3}

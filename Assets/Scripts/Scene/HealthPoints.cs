@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthPoints : MonoBehaviour
 {
-    [SerializeField] float healthPoints = 100f;
+    [SerializeField] float healthPoints = 100f;  
     [SerializeField] GameObject deathParticleEffect;
     private float explosionPeriod = 1f;
 

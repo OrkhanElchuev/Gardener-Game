@@ -1550,17 +1550,17 @@ PrefabInstance:
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsEasyDifficulty
-      value: 1100
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsMediumDifficulty
-      value: 900
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsHardDifficulty
-      value: 750
+      value: 950
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0edd547421565df4c8d47e861aada511, type: 3}
@@ -1640,7 +1640,7 @@ PrefabInstance:
     - target: {fileID: 6111355878816197566, guid: bd9398382b6102248b32d0bb8f9a4e44,
         type: 3}
       propertyPath: enemyPrefabArray.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6111355878816197566, guid: bd9398382b6102248b32d0bb8f9a4e44,
         type: 3}
@@ -1939,7 +1939,7 @@ PrefabInstance:
     - target: {fileID: 8738020640300287201, guid: de14dc49b533be44693a63d3e5e6cbbb,
         type: 3}
       propertyPath: enemyPrefabArray.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8738020640300287201, guid: de14dc49b533be44693a63d3e5e6cbbb,
         type: 3}
@@ -1952,6 +1952,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8738020640300287201, guid: de14dc49b533be44693a63d3e5e6cbbb,
+        type: 3}
+      propertyPath: enemyPrefabArray.Array.data[2]
+      value: 
+      objectReference: {fileID: -6778185388443546538, guid: 7bf5c64466a10054d97c0009339359d4,
+        type: 3}
+    - target: {fileID: 8738020640300287201, guid: de14dc49b533be44693a63d3e5e6cbbb,
+        type: 3}
+      propertyPath: enemyPrefabArray.Array.data[3]
+      value: 
+      objectReference: {fileID: -6778185388443546538, guid: 7bf5c64466a10054d97c0009339359d4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de14dc49b533be44693a63d3e5e6cbbb, type: 3}
 --- !u!1001 &8899943971868635559

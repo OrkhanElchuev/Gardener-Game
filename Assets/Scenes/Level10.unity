@@ -1801,13 +1801,25 @@ PrefabInstance:
     - target: {fileID: 2052696431836150815, guid: a28905d38f66e2f45a587d8481474fd7,
         type: 3}
       propertyPath: enemyPrefabArray.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2052696431836150815, guid: a28905d38f66e2f45a587d8481474fd7,
         type: 3}
       propertyPath: enemyPrefabArray.Array.data[1]
       value: 
+      objectReference: {fileID: -6778185388443546538, guid: 7bf5c64466a10054d97c0009339359d4,
+        type: 3}
+    - target: {fileID: 2052696431836150815, guid: a28905d38f66e2f45a587d8481474fd7,
+        type: 3}
+      propertyPath: enemyPrefabArray.Array.data[2]
+      value: 
       objectReference: {fileID: 670982495943636321, guid: 8c1b16b3316d27d48b61ec5c3bd5128f,
+        type: 3}
+    - target: {fileID: 2052696431836150815, guid: a28905d38f66e2f45a587d8481474fd7,
+        type: 3}
+      propertyPath: enemyPrefabArray.Array.data[3]
+      value: 
+      objectReference: {fileID: -6778185388443546538, guid: 7bf5c64466a10054d97c0009339359d4,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a28905d38f66e2f45a587d8481474fd7, type: 3}
@@ -1961,17 +1973,17 @@ PrefabInstance:
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsEasyDifficulty
-      value: 1300
+      value: 1400
       objectReference: {fileID: 0}
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsMediumDifficulty
-      value: 1000
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsHardDifficulty
-      value: 800
+      value: 950
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0edd547421565df4c8d47e861aada511, type: 3}

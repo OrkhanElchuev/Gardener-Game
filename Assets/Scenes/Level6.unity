@@ -1566,17 +1566,17 @@ PrefabInstance:
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsEasyDifficulty
-      value: 1300
+      value: 1400
       objectReference: {fileID: 0}
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsMediumDifficulty
-      value: 1000
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1502087020217792515, guid: 0edd547421565df4c8d47e861aada511,
         type: 3}
       propertyPath: starsHardDifficulty
-      value: 800
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0edd547421565df4c8d47e861aada511, type: 3}
