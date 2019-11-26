@@ -5,6 +5,11 @@ Defend your garden from hungry animals, use variations of unique defenders and u
 ![](Images/StartMenu.png)
 ![](Images/OptionsMenu.png)
 ![](Images/GamePlay.png)
+## To Play the Game 
+If you want to play the game on your browser, please visit [Gardener](https://orkhan.itch.io/gardener)
+Open in your PC or laptop and play the game without downloading.
+In case if you want to play it on mobile Device, you might want to download the apk file for better experience.
+If you run the game on WebGL through your mobile device you might face problems with resolutions.
 ## Tools used while developing this project
 - Unity.
 - Visual Studio Code. Coding in C# Programming Language.
