@@ -2,15 +2,15 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Gardener"
-#define MyAppVersion "1.4"
-#define MyAppPublisher "ElchuevOrkhan"
+#define MyAppVersion "1.2"
+#define MyAppPublisher "Elchuev Orkhan"
 #define MyAppURL "https://github.com/OrkhanElchuev/Gardener-Game"
 #define MyAppExeName "Gardener.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{D5E51C0F-BB9D-4041-B0DC-4BB7C81DE84A}
+AppId={{006208FD-39FB-4511-9875-19598AC6133F}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
