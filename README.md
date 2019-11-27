@@ -17,7 +17,7 @@ If you run the game on WebGL through your mobile device you might face problems 
 - Inno Setup Compiler (For creating installer files)
 ## How to install?
 ### For Windows User
-- Open Folder Named "Game" in Space-Invader-Game repository.
+- Open Folder Named "Game" in Gardener repository.
 - Proceed to WindowsInstaller Folder.
 - Click on GardenerSetup.exe and download.
 - Most probably you will face a warning message. Just Right click on warning and click "Save".
