@@ -40,7 +40,7 @@ If you run the game on WebGL through your mobile device you might face problems 
 ## Contacts 
 - E-mail address orkhan.elchuev@gmail.com
 - https://github.com/OrkhanElchuev/Gardener-Game
-## Aknowledgements
+## Acknowledgements
 - [dafont](https://www.dafont.com/de/)
 - [LunaPic](https://www6.lunapic.com/editor/)
 - [Wallup](https://wallup.net/)
