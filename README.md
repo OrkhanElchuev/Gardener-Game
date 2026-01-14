@@ -1,20 +1,20 @@
 # Gardener 
 Garden defender Tower Defense game. Created by following Udemy course on 2D-Game development, the project was modified to match personal interests on UI/UX and in the gameplay. 
 Defend your garden from hungry animals, use variations of unique defenders and use the strategy to not let any creature harm your garden!
+
 ## Screenshots
 ![](Images/StartMenu.png)
+
 ![](Images/OptionsMenu.png)
+
 ![](Images/GamePlay.png)
+
 ## To Play the Game 
 If you want to play the game on your browser, please visit [Gardener](https://orkhan.itch.io/gardener)
 Open in your PC or laptop and play the game without downloading.
 In case if you want to play it on mobile Device, you might want to download the apk file for better experience.
 If you run the game on WebGL through your mobile device you might face problems with resolutions.
-## Tools used while developing this project
-- Unity.
-- Visual Studio Code. Coding in C# Programming Language.
-- GitBash.
-- Inno Setup Compiler (For creating installer files)
+
 ## How to install?
 ### For Windows User
 - Open Folder Named "Game" in Gardener repository.
@@ -35,11 +35,20 @@ If you run the game on WebGL through your mobile device you might face problems 
 - Connect your phone and drag and drop the apk file OR open this page on phone and directly download
 - Find the apk file in your phone's main files folder (My Files)
 - Install the game and enjoy!
+  
 ### Known bugs
 - Too much enemies spawn at once.
+
+## Tools used while developing this project
+- Unity.
+- Visual Studio Code. Coding in C# Programming Language.
+- GitBash.
+- Inno Setup Compiler (For creating installer files)
+  
 ## Contacts 
 - E-mail address orkhan.elchuev@gmail.com
 - https://github.com/OrkhanElchuev/Gardener-Game
+  
 ## Acknowledgements
 - [dafont](https://www.dafont.com/de/)
 - [LunaPic](https://www6.lunapic.com/editor/)
